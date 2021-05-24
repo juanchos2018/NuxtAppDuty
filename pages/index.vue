@@ -124,7 +124,8 @@ export default {
     data() {
         return{ 
             featured_products:[],
-            stylecolumn:'product-item d-flex flex-column h-100'
+            stylecolumn:'product-item d-flex flex-column h-100',
+            title: 'Ventas Yojuce'
         }
     },
     mounted (){
@@ -138,19 +139,18 @@ export default {
         ...mapState(["url_base"]),
     },
 
-    head: {
-    title: 'Yojuce',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'ventasyojuce',    content: process.env.APP_DESC, },
-
-      { hid: 'ventasyojuce', name: 'ventasyojuce', content: 'Ventas de todo tipo articulos' },
-      {
-          hid: 'ventasyojuce',
-          name: 'ventasyojuce',
-          content: 'Ventas de todo tipo articulos',
-        },
-    ], 
+   head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'ventas yojuce',
+            name: 'ventas yojuce',
+            content: 'ventas de articulos'
+          }
+        ]
+      }
    }
     
 }

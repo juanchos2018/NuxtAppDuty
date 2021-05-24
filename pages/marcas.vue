@@ -41,6 +41,7 @@ export default {
     data() {
         return{ 
             brands:[],
+            title: 'Ventas Yojuce'
         }
     },
     mounted (){
@@ -52,6 +53,19 @@ export default {
     computed: {
         ...mapState(["url_base"]),
     },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'ventas yojuce',
+            name: 'ventas yojuce',
+            content: 'ventas de articulos'
+          }
+        ]
+      }
+   }
     
 }
 function ListBrands() {

@@ -139,6 +139,8 @@ export default {
               active1:'product-view-icon product-grid-switcher product-view-icon-active',
               active2:'product-view-icon product-grid-switcher',
               name_category:'',
+              title: 'Ventas Yojuce'
+
         }
     },
     computed: {
@@ -154,7 +156,20 @@ export default {
         ProductByCategory1,
         modo1,
         modo2
-    }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'ventas yojuce',
+            name: 'ventas yojuce',
+            content: 'ventas de articulos'
+          }
+        ]
+      }
+   }
 }
 function ListCategories() {
   let me = this;
