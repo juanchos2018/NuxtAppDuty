@@ -1,5 +1,5 @@
 
-export default {
+module.exports= {
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -15,11 +15,11 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: 'Yojuce',
+    title:  process.env.APP_TITLE,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'ventasyojuce', name: 'ventasyojuce', content: 'ventasyojuce' }
+      { hid: 'ventasyojuce', name: 'ventasyojuce',   content: 'Ventas de todo tipo articulos', }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&amp;family=Rubik:wght@300;400;500;700;900&amp;display=swap'},

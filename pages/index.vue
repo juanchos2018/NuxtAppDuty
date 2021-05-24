@@ -129,6 +129,7 @@ export default {
     },
     mounted (){
       this.ListProduct();
+      //https://ventasyojuce.netlify.app/
     },
     methods: {
         ListProduct,
@@ -136,6 +137,21 @@ export default {
     computed: {
         ...mapState(["url_base"]),
     },
+
+    head: {
+    title: 'Yojuce',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'ventasyojuce',    content: process.env.APP_DESC, },
+
+      { hid: 'ventasyojuce', name: 'ventasyojuce', content: 'Ventas de todo tipo articulos' },
+      {
+          hid: 'ventasyojuce',
+          name: 'ventasyojuce',
+          content: 'Ventas de todo tipo articulos',
+        },
+    ], 
+   }
     
 }
 
