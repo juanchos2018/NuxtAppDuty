@@ -62,10 +62,21 @@ module.exports= {
   */
   modules: [
     '@nuxtjs/axios',
-    'nuxt-sweetalert2'
+    'nuxt-sweetalert2',
+    'nuxt-seo'
     
   ],
-
+  seo: {
+		// Module options
+		baseUrl: 'https://ventasyojuce.netlify.app/',
+		name: 'Yojuce',
+		title: 'Ventas Yojuce',
+		templateTitle: 'Ventas Yojuce',
+		description: 'Ventas de Articulos',
+		canonical: 'auto',
+		isForcedTrailingSlash: false
+		//...
+	},
   axios: {
     baseURL: 'http://tiendaapirest.reyfact.com' 
   },

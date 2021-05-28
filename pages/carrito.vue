@@ -130,6 +130,14 @@ export default {
                return this.$store.state.userLoguer;  
           }
     },
+    head: function() {
+			return this.$seo({
+				name: 'Yojuce',
+				title: 'Ventas Yojuce',
+				templateTitle: 'Ventas Yojuce',
+				description: 'Venta de Artículos'
+			})
+		}
 
 }
 function calculate(){

@@ -138,19 +138,15 @@ export default {
     computed: {
         ...mapState(["url_base"]),
     },
-
-   head() {
-      return {
-        title: this.title,
-        meta: [  
-          {
-            hid: 'ventas yojuce',
-            name: 'ventas yojuce',
-            content: 'ventas de articulos'
-          }
-        ]
-      }
-   }    
+    head: function() {
+			return this.$seo({
+				name: 'Yojuce',
+				title: 'Ventas Yojuce',
+				templateTitle: 'Ventas Yojuce',
+				description: 'Venta de Artículos'
+			})
+	}
+    
 }
 
 
