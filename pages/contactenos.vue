@@ -132,7 +132,18 @@ export default {
     computed: {
         ...mapState(["url_base"]),
     },
-    
+     head() {
+      return {
+        title: this.title,
+        meta: [  
+          {
+            hid: 'ventas yojuce',
+            name: 'ventas yojuce',
+            content: 'ventas de articulos'
+          }
+        ]
+      }
+   } 
 }
 
 </script>
