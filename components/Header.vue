@@ -30,7 +30,7 @@
                     </div>                       
               </li>
               <li v-else>
-                <NuxtLink to="/account"
+                <NuxtLink to="/account/"
                   ><a
                     ><i class="fa fa-lock left" aria-hidden="true"></i
                     ><span class="hidden-sm-down">Iniciar Sesión</span></a
@@ -38,7 +38,7 @@
                 >
               </li>           
               <li>
-                <NuxtLink to="/account/registrar"
+                <NuxtLink to="/account/registrar/"
                   ><a
                     ><i class="fa fa-lock left" aria-hidden="true"></i
                     ><span class="hidden-sm-down">Regístrate</span></a
@@ -46,13 +46,13 @@
                 >
               </li>
               <li>
-                <NuxtLink to="/tiendas"><a>Tiendas</a></NuxtLink>
+                <NuxtLink to="/tiendas/"><a>Tiendas</a></NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/marcas"><a>Marcas</a></NuxtLink>
+                <NuxtLink to="/marcas/"><a>Marcas</a></NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/contactenos"><a>Contáctenos</a></NuxtLink>
+                <NuxtLink to="/contactenos/"><a>Contáctenos</a></NuxtLink>
               </li>
             </ul>
             <ul class="list-inline ml-3">

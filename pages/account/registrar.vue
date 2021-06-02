@@ -263,7 +263,7 @@ function Error(mensaje){
     text: mensaje, 
   })
 }
-
+//    { rel: 'stylesheet', type: 'text/css', href: '/assets/css/main.css'},<style src="static/assets/css/main.css"  />
 </script>
 
 <style>
